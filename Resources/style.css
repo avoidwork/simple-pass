@@ -1,0 +1,70 @@
+@font-face {
+	font-family: Apertura;
+	src: url("Apertura-Condensed.otf") format("opentype");
+}
+
+html,
+body {
+	height: 100%;
+	min-height: 100%;
+}
+
+body {
+	background-color: #007aaa;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 122, 170)), to(rgb(0, 214, 255)));
+	background-image: -webkit-linear-gradient(top, rgb(0, 122, 170), rgb(0, 214, 255));
+	background-image: -moz-linear-gradient(top, rgb(0, 122, 170), rgb(0, 214, 255));
+	background-image: -o-linear-gradient(top, rgb(0, 122, 170), rgb(0, 214, 255));
+	background-image: -ms-linear-gradient(top, rgb(0, 122, 170), rgb(0, 214, 255));
+	background-image: linear-gradient(top, rgb(0, 122, 170), rgb(0, 214, 255));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#007aaa', EndColorStr='#00d6ff');
+	font-family: "Apertura", arial;
+	font-size: 14px;
+	margin: 10px;
+	padding: 0;
+	color: #fff;
+}
+
+#display {
+	width: 480px;
+	border: 0px;
+	margin: 0;
+	font-size: 1em;
+	background-color: rgba(0,0,0,0);
+	color: #fff;
+}
+
+#display:focus {
+    outline: 0;
+}
+
+#display::-webkit-input-placeholder {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+#n,
+#generate {
+	margin: 3px;
+	margin-left: 10px;
+	padding: 0;
+	font-size: 1em;
+}
+
+#n:hover,
+#generate:hover {
+	cursor: pointer;
+}
+
+#generate {
+	padding: 3px;
+}
+
+* {
+	font-family: "Apertura", arial;
+}
+
+h4,
+p,
+form {
+	margin: 0 0 10px 0;
+}

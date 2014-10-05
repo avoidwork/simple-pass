@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SimplePass</title>
+<link rel="stylesheet" href="style.css" media="print, screen">
+</head>
+<body>
+	<p>Generate a password you can remember, and computers can't break</p>
+	<form>
+		Words:
+		<select id="n">
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+		</select>
+		<button id="generate" type="button">Generate</button>
+	</form>
+	<p>
+		<input id="display" type="text" placeholder="Generate a password" />
+	</p>
+	<script type="text/javascript" src="mwords.js"></script>
+	<script type="text/javascript" src="mpass.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
