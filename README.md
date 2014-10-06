@@ -5,7 +5,7 @@ Generate a password you can remember, and computers can't break
 [ ![Image](https://farm3.staticflickr.com/2941/15450920331_a8c93c3f72_o_d.png "SimplePass screenshot") ](https://github.com/avoidwork/simple-pass/ "Screenshot")
 
 ## How do I install SimplePass?
-A _dmg_ file is available in _packages/osx/network_.
+A _dmg_ file is available in _packages/osx/bundle_.
 
 ## How to build
 Install the latest stable release of TideSDK, & import this project.
