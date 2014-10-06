@@ -6,7 +6,7 @@
  * @license BSD-3 <https://raw.github.com/avoidwork/mpass/master/LICENSE>
  * @link http://avoidwork.github.io/mpass
  * @module mpass
- * @version 0.1.0
+ * @version 0.1.1
  */
 ( function ( global, words ) {
 "use strict";
@@ -23,10 +23,11 @@ var nth = words.length;
 function password ( n ) {
 	n          = n || 3;
 	var result = "",
-	    i      = -1;
+	    i      = -1,
+	    used   = {};
 
 	while ( ++i < n ) {
-		result += words[random( nth )];
+		result += words[random( nth, used )];
 	}
 
 	return result;
@@ -39,8 +40,17 @@ function password ( n ) {
  * @param  {Number} arg Ceiling
  * @return {Number}     Random number between 0 and ceiling
  */
-function random( arg ) {
-	return Math.floor( Math.random() * ( arg + 1 ) );
+function random( arg, used ) {
+	var n;
+
+	do {
+		n = Math.floor( Math.random() * ( arg + 1 ) );
+	}
+	while ( used[n] );
+
+	used[n] = 1;
+
+	return n;
 }
 
 global.password = password;

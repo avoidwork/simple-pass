@@ -2,7 +2,7 @@
 <ti:app xmlns:ti='http://ti.appcelerator.org'>
 <id>com.jasonmulligan.simplepass</id>
 <name>SimplePass</name>
-<version>0.1.0</version>
+<version>0.2.0</version>
 <publisher>Jason Mulligan</publisher>
 <url>http://avoidwork.com</url>
 <icon>default_app_logo.png</icon>

@@ -1,3 +1,7 @@
+SimplePass 0.2.0 (released 2014-10-06)
+
+- Fixing duplicate words in the resulting password
+
 SimplePass 0.1.0 (released 2014-10-05)
 
 - Initial release
